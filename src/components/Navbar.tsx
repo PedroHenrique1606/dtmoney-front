@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray1 text-gray6 shadow-md">
+    <nav className="bg-gray1 text-gray6 shadow-md fixed top-0 right-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         <Link href="/" className="flex items-center">
           <Image src={Logo} alt="DT Money" className="w-10 h-10" />
@@ -73,55 +73,63 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu modal */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-gray1 rounded-lg p-6 w-3/4 max-w-sm text-center">
-            <button
-              onClick={toggleMenu}
-              className="absolute top-4 right-4 text-white text-2xl"
-            >
-              &times;
-            </button>
-            <ul className="space-y-4 text-sm font-medium">
-              <li>
-                <Link
-                  href="#features"
-                  className="hover:text-green-light transition"
-                  onClick={toggleMenu}
-                >
-                  Funcionalidades
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#about"
-                  className="hover:text-green-light transition"
-                  onClick={toggleMenu}
-                >
-                  Sobre Nós
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className="hover:text-green-light transition"
-                  onClick={toggleMenu}
-                >
-                  Contato
-                </Link>
-              </li>
-              <div className="space-y-2 mt-4 flex justify-center items-center flex-col">
-                <a href="login">
-                  <Button onClick={toggleMenu}>Login</Button>
-                </a>
-                <a href="singin">
-                  <Button onClick={toggleMenu}>Cadastrar</Button>
-                </a>
-              </div>
-            </ul>
-          </div>
+      <div
+        className={`fixed inset-y-0 right-0 bg-gray1 shadow-lg transform ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 ease-in-out z-50 w-64`}
+      >
+        <div className="p-6">
+          <button
+            onClick={toggleMenu}
+            className="text-white text-2xl absolute top-4 right-4"
+          >
+            &times;
+          </button>
+          <ul className="space-y-4 text-sm font-medium mt-8">
+            <li>
+              <Link
+                href="#features"
+                className="hover:text-green-light transition"
+                onClick={toggleMenu}
+              >
+                Funcionalidades
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#about"
+                className="hover:text-green-light transition"
+                onClick={toggleMenu}
+              >
+                Sobre Nós
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#contact"
+                className="hover:text-green-light transition"
+                onClick={toggleMenu}
+              >
+                Contato
+              </Link>
+            </li>
+            <div className="space-y-2 mt-4 flex justify-center items-center flex-col">
+              <a href="login">
+                <Button onClick={toggleMenu}>Login</Button>
+              </a>
+              <a href="signup">
+                <Button onClick={toggleMenu}>Cadastrar</Button>
+              </a>
+            </div>
+          </ul>
         </div>
+      </div>
+
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+          onClick={toggleMenu}
+        ></div>
       )}
     </nav>
   );
