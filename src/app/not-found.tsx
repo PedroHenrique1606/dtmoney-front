@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -11,11 +12,11 @@ export default function NotFound() {
         <p className="mb-6 text-white">
           Pedimos desculpas pelo ocorrido, retorne para a tela de Home!
         </p>
-        <a href="/">
+        <Link href={"/"}>
           <Button className="bg-green text-white hover:bg-green-light transition duration-200">
             Voltar ao início
           </Button>
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -58,7 +58,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col space-y-16 items-center justify-center">
             <HorizontalCard
-              imageSrcOne="https://plus.unsplash.com/premium_photo-1680363254554-d1c63ad8d33d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              imageSrcOne="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2020-03-19_Entrevista_concedida_ao_apresentador_Ratinho_do_SBT_21_%28cropped%29.jpg/1200px-2020-03-19_Entrevista_concedida_ao_apresentador_Ratinho_do_SBT_21_%28cropped%29.jpg"
               title="Gerencie suas finanças"
               description="Tenha controle total dos seus gastos, prioridades e projeção de gastos"
               link="#"
@@ -66,13 +66,13 @@ const Home = () => {
             />
             <HorizontalCard
               imageSrcOne=""
-              imageSrcTwo="https://images.pexels.com/photos/6802049/pexels-photo-6802049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              imageSrcTwo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2020-03-19_Entrevista_concedida_ao_apresentador_Ratinho_do_SBT_21_%28cropped%29.jpg/1200px-2020-03-19_Entrevista_concedida_ao_apresentador_Ratinho_do_SBT_21_%28cropped%29.jpg"
               title="Planeje seus gastos"
               description="Saiba gerenciar cada gasto com base nos gastos anteriores"
               link="#"
             />
             <HorizontalCard
-              imageSrcOne="https://plus.unsplash.com/premium_photo-1680363254554-d1c63ad8d33d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              imageSrcOne="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2020-03-19_Entrevista_concedida_ao_apresentador_Ratinho_do_SBT_21_%28cropped%29.jpg/1200px-2020-03-19_Entrevista_concedida_ao_apresentador_Ratinho_do_SBT_21_%28cropped%29.jpg"
               title="Gerencie suas finanças"
               description="Tenha controle total dos seus gastos, prioridades e projeção de gastos"
               link="#"
@@ -80,13 +80,13 @@ const Home = () => {
             />
             <HorizontalCard
               imageSrcOne=""
-              imageSrcTwo="https://images.pexels.com/photos/6802049/pexels-photo-6802049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              imageSrcTwo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2020-03-19_Entrevista_concedida_ao_apresentador_Ratinho_do_SBT_21_%28cropped%29.jpg/1200px-2020-03-19_Entrevista_concedida_ao_apresentador_Ratinho_do_SBT_21_%28cropped%29.jpg"
               title="Planeje seus gastos"
               description="Saiba gerenciar cada gasto com base nos gastos anteriores"
               link="#"
             />
             <HorizontalCard
-              imageSrcOne="https://plus.unsplash.com/premium_photo-1680363254554-d1c63ad8d33d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              imageSrcOne="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2020-03-19_Entrevista_concedida_ao_apresentador_Ratinho_do_SBT_21_%28cropped%29.jpg/1200px-2020-03-19_Entrevista_concedida_ao_apresentador_Ratinho_do_SBT_21_%28cropped%29.jpg"
               title="Gerencie suas finanças"
               description="Tenha controle total dos seus gastos, prioridades e projeção de gastos"
               link="#"
@@ -94,7 +94,7 @@ const Home = () => {
             />
             <HorizontalCard
               imageSrcOne=""
-              imageSrcTwo="https://images.pexels.com/photos/6802049/pexels-photo-6802049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              imageSrcTwo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2020-03-19_Entrevista_concedida_ao_apresentador_Ratinho_do_SBT_21_%28cropped%29.jpg/1200px-2020-03-19_Entrevista_concedida_ao_apresentador_Ratinho_do_SBT_21_%28cropped%29.jpg"
               title="Planeje seus gastos"
               description="Saiba gerenciar cada gasto com base nos gastos anteriores"
               link="#"
