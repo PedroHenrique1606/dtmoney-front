@@ -4,9 +4,9 @@ export function SafariDemo() {
   return (
     <div className="relative">
       <Safari
-        url="localhost:3333/dtmoney"
+        url="dtmoney-front-fdmg.vercel.app"
         className="size-full"
-        src="https://user-images.githubusercontent.com/42820357/196014162-82269eaf-127c-42bd-ad15-e2f2d457be53.png"
+        src="https://raw.githubusercontent.com/PedroHenrique1606/dtmoney-front/refs/heads/main/src/assets/home-desktop.png"
       />
     </div>
   );
