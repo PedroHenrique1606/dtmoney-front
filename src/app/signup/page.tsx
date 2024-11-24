@@ -1,7 +1,9 @@
-import Image from "next/image";
 import Logo from "@/assets/logodtmoney.svg";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { ChevronRight, LogIn } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function SignUp() {
   return (
@@ -84,16 +86,27 @@ export default function SignUp() {
               </a>
               .
             </p>
-
-            <div className="mt-4 text-center">
-              <a href="#" className="text-gray-200 hover:underline">
-                <div className="flex items-center justify-center">
-                  {/* Ícone aqui */}
-                  <span className="ml-2">Entre na plataforma</span>
-                </div>
-              </a>
-            </div>
           </form>
+          <div className="space-y-4">
+            <div className="p-[1.5px] bg-gray4"></div>
+            <Link href={"/login"}>
+              <div className="bg-gray-800 text-gray-300 rounded-lg p-4 flex justify-between items-center shadow-lg max-w-md">
+                <div className="flex items-center">
+                  <LogIn size={20} className="text-green-light mr-2" />
+                  <div>
+                    <p className="text-sm">Já possui uma conta?</p>
+                    <Link
+                      href="/login"
+                      className="text-green-light font-semibold hover:underline"
+                    >
+                      Entre na plataforma
+                    </Link>
+                  </div>
+                </div>
+                <ChevronRight size={20} className="text-gray-400" />
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
