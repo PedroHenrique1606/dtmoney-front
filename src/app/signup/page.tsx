@@ -77,11 +77,11 @@ export default function SignUp() {
 
             <p className="text-sm text-gray-400">
               Ao se cadastrar, você aceita nossos{" "}
-              <a href="#" className="text-green-500 hover:underline">
+              <a href="/terms" className="text-green-500 hover:underline">
                 termos de uso
               </a>{" "}
               e a nossa{" "}
-              <a href="#" className="text-green-500 hover:underline">
+              <a href="/terms" className="text-green-500 hover:underline">
                 política de privacidade
               </a>
               .
@@ -89,6 +89,7 @@ export default function SignUp() {
           </form>
           <div className="space-y-4">
             <div className="p-[1.5px] bg-gray4"></div>
+            <div className="p-1"></div>
             <Link href={"/login"}>
               <div className="bg-gray-800 text-gray-300 rounded-lg p-4 flex justify-between items-center shadow-lg max-w-md">
                 <div className="flex items-center">
