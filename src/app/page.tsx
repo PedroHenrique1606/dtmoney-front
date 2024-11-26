@@ -108,8 +108,8 @@ const Home = () => {
             <Accordion type="single" collapsible className="w-full">
               {beneficios.map((beneficio) => (
                 <AccordionItem key={beneficio.id} value={beneficio.id}>
-                  <AccordionTrigger>{beneficio.pergunta}</AccordionTrigger>
-                  <AccordionContent>{beneficio.resposta}</AccordionContent>
+                  <AccordionTrigger className="text-base">{beneficio.pergunta}</AccordionTrigger>
+                  <AccordionContent >{beneficio.resposta}</AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
