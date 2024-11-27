@@ -96,12 +96,9 @@ export default function SignUp() {
                   <LogIn size={20} className="text-green-light mr-2" />
                   <div>
                     <p className="text-sm">Já possui uma conta?</p>
-                    <Link
-                      href="/login"
-                      className="text-green-light font-semibold hover:underline"
-                    >
+                    <p className="text-green-light font-semibold hover:underline">
                       Entre na plataforma
-                    </Link>
+                    </p>
                   </div>
                 </div>
                 <ChevronRight size={20} className="text-gray-400" />

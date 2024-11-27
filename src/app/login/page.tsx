@@ -1,9 +1,26 @@
+"use client";
+
 import Logo from "@/assets/logodtmoney.svg";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ChevronRight, LogIn } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { toast } from "react-toastify";
+
+function loginToastTeste() {
+  console.log("Toast acionado!");
+  toast("🦄 Wow so easy!", {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+  });
+}
 
 export default function Login() {
   return (
@@ -57,23 +74,23 @@ export default function Login() {
           </form>
           <div className="space-y-4">
             <div className="p-[1.5px] bg-gray4"></div>
-            <Link href={"/login"}>
-              <div className="bg-gray-800 text-gray-300 rounded-lg p-4 flex justify-between items-center shadow-lg max-w-md">
-                <div className="flex items-center">
-                  <LogIn size={20} className="text-green-light mr-2" />
-                  <div>
-                    <p className="text-sm">Não possui conta ainda?</p>
-                    <Link
-                      href="/signup"
-                      className="text-green-light font-semibold hover:underline"
-                    >
-                      Crie a sua agora
-                    </Link>
-                  </div>
+            <div className="p-1"></div>
+            <div className="bg-gray-800 text-gray-300 rounded-lg p-4 flex justify-between items-center shadow-lg max-w-md cursor-pointer">
+              <Link
+                onClick={loginToastTeste}
+                href={"/signup"}
+                className="flex items-center w-full"
+              >
+                <LogIn size={20} className="text-green-light mr-2" />
+                <div>
+                  <p className="text-sm">Não possui conta ainda?</p>
+                  <p className="text-green-light font-semibold hover:underline">
+                    Crie a sua agora
+                  </p>
                 </div>
-                <ChevronRight size={20} className="text-gray-400" />
-              </div>
-            </Link>
+                <ChevronRight size={20} className="text-gray-400 ml-auto" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
