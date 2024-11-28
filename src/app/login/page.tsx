@@ -9,17 +9,7 @@ import Link from "next/link";
 import { toast } from "react-toastify";
 
 function loginToastTeste() {
-  console.log("Toast acionado!");
-  toast("🦄 Wow so easy!", {
-    position: "top-right",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-  });
+  toast.success("Login feito com sucesso");
 }
 
 export default function Login() {
@@ -67,20 +57,21 @@ export default function Login() {
               </label>
               <Input type="password" placeholder="Sua senha" />
             </div>
-
             <div>
-              <Button className="w-full py-6 font-bold">Entrar</Button>
+              <Button
+                className="w-full py-6 font-bold"
+                onClick={loginToastTeste} 
+                type="button"
+              >
+                Entrar
+              </Button>
             </div>
           </form>
           <div className="space-y-4">
             <div className="p-[1.5px] bg-gray4"></div>
             <div className="p-1"></div>
             <div className="bg-gray-800 text-gray-300 rounded-lg p-4 flex justify-between items-center shadow-lg max-w-md cursor-pointer">
-              <Link
-                onClick={loginToastTeste}
-                href={"/signup"}
-                className="flex items-center w-full"
-              >
+              <Link href={"/signup"} className="flex items-center w-full">
                 <LogIn size={20} className="text-green-light mr-2" />
                 <div>
                   <p className="text-sm">Não possui conta ainda?</p>
