@@ -88,7 +88,7 @@ const Home = () => {
       </header>
 
       {/* Features Section */}
-      <section className="py-16 px-8 bg-gray1 space-y-10">
+      <section className="py-16 px-8 bg-gray1 space-y-10 ">
         <div
           className="max-w-7xl mx-auto
           motion-safe:animate-fade-in-up"
@@ -101,15 +101,17 @@ const Home = () => {
             Oferecemos as melhores funcionalidades para você alcançar sua
             independência financeira.
           </p>
-          <div className="flex gap-8 space-y-16">
+          <div className="flex gap-8 space-y-16 flex-col md:flex-row">
             <div>
               <Image src={HomeDesktop} alt="Home" />
             </div>
             <Accordion type="single" collapsible className="w-full">
               {beneficios.map((beneficio) => (
                 <AccordionItem key={beneficio.id} value={beneficio.id}>
-                  <AccordionTrigger className="text-base">{beneficio.pergunta}</AccordionTrigger>
-                  <AccordionContent >{beneficio.resposta}</AccordionContent>
+                  <AccordionTrigger className="text-base">
+                    {beneficio.pergunta}
+                  </AccordionTrigger>
+                  <AccordionContent>{beneficio.resposta}</AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
