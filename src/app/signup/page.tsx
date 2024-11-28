@@ -1,9 +1,16 @@
+'use client'
+
 import Logo from "@/assets/logodtmoney.svg";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ChevronRight, LogIn } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { toast } from "react-toastify";
+
+function loginToastTeste() {
+  toast.success("Conta criada com sucesso");
+}
 
 export default function SignUp() {
   return (
@@ -72,7 +79,13 @@ export default function SignUp() {
             </div>
 
             <div>
-              <Button className="w-full py-6 font-bold">Criar conta</Button>
+              <Button
+                onClick={loginToastTeste}
+                type="button"
+                className="w-full py-6 font-bold"
+              >
+                Criar conta
+              </Button>
             </div>
 
             <p className="text-sm text-gray-400">
